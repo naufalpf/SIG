@@ -2,7 +2,7 @@
 ## Kuliah Teknik Informatika - Mata Kuliah Sistem Informasi Geografis 2018
 ### Final Project Menampilkan Jarak ke Universitas tertentu dan Rute antar Universitas di Surabaya
 
-### Koordinat Univ di Surabaya
+### Koordinat Universitas di Surabaya
 - -7.2795,112.7901 Institut Teknologi Sepuluh Nopember
 - -7.26566,112.76015 Universitas Airlangga Kampus A
 - -7.2692,112.7895 Universitas Airlangga Kampus C
