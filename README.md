@@ -3,9 +3,9 @@
 ### Final Project Menampilkan Jarak ke Universitas tertentu dan Rute antar Universitas di Surabaya
 
 ### Koordinat Univ di Surabaya
--7.2795,112.7901 Institut Teknologi Sepuluh Nopember
--7.26566,112.76015 Universitas Airlangga Kampus A
--7.2692,112.7895 Universitas Airlangga Kampus C
+- -7.2795,112.7901 Institut Teknologi Sepuluh Nopember
+- -7.26566,112.76015 Universitas Airlangga Kampus A
+- -7.2692,112.7895 Universitas Airlangga Kampus C
 -7.31821,112.76770 Universitas Surabaya
 -7.33950,112.73831 Universitas Kristen Petra
 -7.3016,112.6708 Universitas Negeri Surabaya 
