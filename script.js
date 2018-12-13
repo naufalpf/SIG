@@ -371,7 +371,7 @@ function terdekat()
                         console.log("uyeeeeee");
                         console.log(min);
                         var tex = $('#jarakGanti');
-                        tex.text("Jarak ke Universitas "+min+" km");
+                        tex.text("Jarak ke Universitas  "+min+" km");
                        
                         $('#pendekpol').attr('value',terpendek);
                         var oReq = new XMLHttpRequest();
