@@ -22,7 +22,7 @@
         <nav class="navbar navbar-expand-lg navbar-light rounded">
             <div class="collapse navbar-collapse justify-content-md-center">
                 <ul class="nav nav-tabs">
-                  <li class="nav-item active"><a class="nav-link active" style="background-color: silver" href="index.php"><i class="fa fa-route"></i> Cari Rute dan Jarak ke Universitas </a></li>
+                  <li class="nav-item active"><a class="nav-link active" style="background-color: silver" href="index.php"><i class="fa fa-route"></i> Cari Rute ke Universitas </a></li>
                  <li class="nav-item"><a class="nav-link active" href="terdekat.php"><i class="fa fa-university"></i> Cari Universitas Terdekat</a></li>
                    <li class="nav-item"><a class="nav-link active" href="antara.php"><i class="fa fa-arrows-alt-h"></i> Rute dan Jarak antar Universitas</a></li>
                 </ul>
@@ -85,8 +85,8 @@
                         <!-- bikin di tengah -->
                       </div>
                       <div class="col">
-                        <button onclick="return execute()" class="btn btn-success mb-2 btn-block">Cari Rute dan Jarak</button>
-                        <button id="jarakGanti" class="btn btn-primary disabled">Jarak ke Universitas: </button>
+                        <button onclick="return execute()" class="btn btn-success mb-2 btn-block">Cari Rute</button>
+                         <button id="jarakGanti" class="btn btn-primary disabled">Jarak ke Universitas: </button> 
                       </div>
                
                     </div>
