@@ -137,7 +137,7 @@ var styles1 = {
 function CenterMap(long, lat) {
     //console.log("Long: " + long + " Lat: " + lat);
     map.getView().setCenter(ol.proj.transform([long, lat], 'EPSG:4326', 'EPSG:3857'));
-    map.getView().setZoom(5);
+    map.getView().setZoom(20);
 }
 
 var geojsonObject;
@@ -181,8 +181,8 @@ var map = new ol.Map({
     }
   }),
   view: new ol.View({
-    center: ol.proj.fromLonLat([112.7425, -7.265278]),
-    zoom: 12
+    center: ol.proj.fromLonLat([112.7953, -7.2818]),
+    zoom: 14
 
     // vectorLayer.addLayer(new OpenLayers.Layer.OSM());
 
@@ -225,7 +225,7 @@ function execute(){
 
       var oReq = new XMLHttpRequest();
       oReq.onload = reqListener;
-      var url="http://localhost/SIG-FIX/find.php?x1="+tempx+"&y1="+tempy+"&unive="+univku;
+      var url="http://localhost/GIS/find.php?x1="+tempx+"&y1="+tempy+"&unive="+univku;
       oReq.open("GET",url, true);
       oReq.send();
       console.log(url);
@@ -264,7 +264,7 @@ function execute(){
 
       var oReq = new XMLHttpRequest();
       oReq.onload = reqListener;
-      var url="http://localhost/SIG-FIX/jarak.php?x1="+tempx+"&y1="+tempy+"&unive="+univku;
+      var url="http://localhost/GIS/jarak.php?x1="+tempx+"&y1="+tempy+"&unive="+univku;
       // var url="http://localhost/tryMap/jarak.php?x1="+elements[0].value+"&y1="+elements[1].value+"&x2="+elements[2].value+"&y2="+elements[3].value;
       oReq.open("GET",url, true);
       oReq.send();
@@ -340,7 +340,7 @@ function terdekat()
                       //var tempp1 = koor_1.split(',');
                       var oReq = new XMLHttpRequest();
                       oReq.onload = reqListener;
-                      var url="http://localhost/SIG-FIX/jarak.php?x1="+tempx+"&y1="+tempy+"&unive="+univku;
+                      var url="http://localhost/GIS/jarak.php?x1="+tempx+"&y1="+tempy+"&unive="+univku;
                       // var url="http://localhost/tryMap/jarak.php?x1="+elements[0].value+"&y1="+elements[1].value+"&x2="+elements[2].value+"&y2="+elements[3].value;
                       oReq.open("GET",url, true);
                       oReq.send();
@@ -376,7 +376,7 @@ function terdekat()
                         $('#pendekpol').attr('value',terpendek);
                         var oReq = new XMLHttpRequest();
                         oReq.onload = reqListener;
-                        var url="http://localhost/SIG-FIX/nama.php?x1="+terpendek;
+                        var url="http://localhost/GIS/nama.php?x1="+terpendek;
                         oReq.open("GET",url, true);
                         oReq.send();
                         function reqListener(e) {
@@ -398,7 +398,7 @@ function terdekat()
                         var univku = terpendek;
                         var oReq = new XMLHttpRequest();
                         oReq.onload = reqListener;
-                        var url="http://localhost/SIG-FIX/find.php?x1="+tempx+"&y1="+tempy+"&unive="+univku;
+                        var url="http://localhost/GIS/find.php?x1="+tempx+"&y1="+tempy+"&unive="+univku;
                         oReq.open("GET",url, true);
                         oReq.send();
                         console.log(url);
@@ -433,7 +433,7 @@ function terdekat()
                       var univku = 2;
                       var oReq = new XMLHttpRequest();
                       oReq.onload = reqListener;
-                      var url="http://localhost/SIG-FIX/jarak.php?x1="+tempx+"&y1="+tempy+"&unive="+univku;
+                      var url="http://localhost/GIS/jarak.php?x1="+tempx+"&y1="+tempy+"&unive="+univku;
                       // var url="http://localhost/tryMap/jarak.php?x1="+elements[0].value+"&y1="+elements[1].value+"&x2="+elements[2].value+"&y2="+elements[3].value;
                       oReq.open("GET",url, true);
                       oReq.send();
@@ -464,7 +464,7 @@ function terdekat()
                         $('#pendekpol').attr('value',terpendek);
                         var oReq = new XMLHttpRequest();
                         oReq.onload = reqListener;
-                        var url="http://localhost/SIG-FIX/nama.php?x1="+terpendek;
+                        var url="http://localhost/GIS/nama.php?x1="+terpendek;
                         oReq.open("GET",url, true);
                         oReq.send();
                         function reqListener(e) {
@@ -486,7 +486,7 @@ function terdekat()
                         var univku = terpendek;
                         var oReq = new XMLHttpRequest();
                         oReq.onload = reqListener;
-                        var url="http://localhost/SIG-FIX/find.php?x1="+tempx+"&y1="+tempy+"&unive="+univku;
+                        var url="http://localhost/GIS/find.php?x1="+tempx+"&y1="+tempy+"&unive="+univku;
                         oReq.open("GET",url, true);
                         oReq.send();
                         console.log(url);
@@ -520,7 +520,7 @@ function terdekat()
                       var univku = 3;
                       var oReq = new XMLHttpRequest();
                       oReq.onload = reqListener;
-                      var url="http://localhost/SIG-FIX/jarak.php?x1="+tempx+"&y1="+tempy+"&unive="+univku;
+                      var url="http://localhost/GIS/jarak.php?x1="+tempx+"&y1="+tempy+"&unive="+univku;
                       // var url="http://localhost/tryMap/jarak.php?x1="+elements[0].value+"&y1="+elements[1].value+"&x2="+elements[2].value+"&y2="+elements[3].value;
                       oReq.open("GET",url, true);
                       oReq.send();
@@ -555,7 +555,7 @@ function terdekat()
 
                         var oReq = new XMLHttpRequest();
                         oReq.onload = reqListener;
-                        var url="http://localhost/SIG-FIX/nama.php?x1="+terpendek;
+                        var url="http://localhost/GIS/nama.php?x1="+terpendek;
                         oReq.open("GET",url, true);
                         oReq.send();
                         function reqListener(e) {
@@ -576,7 +576,7 @@ function terdekat()
                         var univku = terpendek;
                         var oReq = new XMLHttpRequest();
                         oReq.onload = reqListener;
-                        var url="http://localhost/SIG-FIX/find.php?x1="+tempx+"&y1="+tempy+"&unive="+univku;
+                        var url="http://localhost/GIS/find.php?x1="+tempx+"&y1="+tempy+"&unive="+univku;
                         oReq.open("GET",url, true);
                         oReq.send();
                         console.log(url);

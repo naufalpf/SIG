@@ -111,14 +111,14 @@
       </div>
     </div>
     <script>
-                  var sigcuk = document.getElementById("demo");
+                  var sigg = document.getElementById("demo");
 
                   function getLocation() {
                       if (navigator.geolocation) {
                           navigator.geolocation.getCurrentPosition(showPosition);
 
                       } else { 
-                          sigcuk.innerHTML = "Geolocation is not supported by this browser.";
+                          sigg.innerHTML = "Geolocation is not supported by this browser.";
                       }
                   }
 
